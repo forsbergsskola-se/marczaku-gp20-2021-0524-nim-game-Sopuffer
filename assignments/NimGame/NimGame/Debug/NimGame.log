@@ -1,0 +1,12 @@
+﻿  NimGame.cpp
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(12,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(44,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(67,33): warning C4018: '>': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(82,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(110,33): warning C4018: '>': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(125,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(149,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(172,33): warning C4018: '>': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(187,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\NimGame\NimGame.cpp(229,35): warning C4018: '<': signed/unsigned mismatch
+  NimGame.vcxproj -> C:\Users\sophi\Desktop\Sophie's Projects\C++_Assignments\NimGame\Debug\NimGame.exe
