@@ -45,7 +45,7 @@ void TicTacToeAI() {
             aiPlayer = true;
         }
 
-        cout << "Player" << playerTurn << "'s move:" << endl;
+        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9:" << endl;
         
 
         bool validMove;
@@ -225,7 +225,7 @@ void TicTacToeTwoPlr() {
             playerMark = 'O';
         }
 
-        cout << "Player" << playerTurn << "'s move:" << endl;
+        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9" << endl;
         bool validMove;
         do {
             char nextMove;
