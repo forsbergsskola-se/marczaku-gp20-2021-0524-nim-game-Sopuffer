@@ -15,15 +15,15 @@ bool Check_number(string str) {
 
 
 void TicTacToeAI() {
-    string square1("1");
-    string square2("2");
-    string square3("3");
-    string square4("4");
-    string square5("5");
-    string square6("6");
-    string square7("7");
-    string square8("8");
-    string square9("9");
+    string square1(" ");
+    string square2(" ");
+    string square3(" ");
+    string square4(" ");
+    string square5(" ");
+    string square6(" ");
+    string square7(" ");
+    string square8(" ");
+    string square9(" ");
     bool gameOver(true);
     int playerTurn(1);
     bool aiPlayer = false;
@@ -45,7 +45,7 @@ void TicTacToeAI() {
             aiPlayer = true;
         }
 
-        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9:" << endl;
+        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9 to place your mark on that square:" << endl;
         
 
         bool validMove;
@@ -67,31 +67,31 @@ void TicTacToeAI() {
                 }
                 validMove = true;
 
-                if (nextMove == "1" && square1 == "1") {
+                if (nextMove == "1" && square1 == " ") {
                     square1 = playerMark;
                 }
-                else if (nextMove == "2" && square2 == "2") {
+                else if (nextMove == "2" && square2 == " ") {
                     square2 = playerMark;
                 }
-                else if (nextMove == "3" && square3 == "3") {
+                else if (nextMove == "3" && square3 == " ") {
                     square3 = playerMark;
                 }
-                else if (nextMove == "4" && square4 == "4") {
+                else if (nextMove == "4" && square4 == " ") {
                     square4 = playerMark;
                 }
-                else if (nextMove == "5" && square5 == "5") {
+                else if (nextMove == "5" && square5 == " ") {
                     square5 = playerMark;
                 }
-                else if (nextMove == "6" && square6 == "6") {
+                else if (nextMove == "6" && square6 == " ") {
                     square6 = playerMark;
                 }
-                else if (nextMove == "7" && square7 == "7") {
+                else if (nextMove == "7" && square7 == " ") {
                     square7 = playerMark;
                 }
-                else if (nextMove == "8" && square8 == "8") {
+                else if (nextMove == "8" && square8 == " ") {
                     square8 = playerMark;
                 }
-                else if (nextMove == "9" && square9 == "9") {
+                else if (nextMove == "9" && square9 == " ") {
                     square9 = playerMark;
                 }
                 else {
@@ -104,7 +104,7 @@ void TicTacToeAI() {
         gameOver = false;
         bool winGame = true;
 
-        if (square1 != "1") {
+        if (square1 != " ") {
             if (square2 == square1 && square3 == square1) {
                 gameOver = true;
             }
@@ -112,7 +112,7 @@ void TicTacToeAI() {
                 gameOver = true;
             }
         }
-        if (square5 != "5") {
+        if (square5 != " ") {
             if (square1 == square5 && square9 == square5) {
                 gameOver = true;
             }
@@ -126,7 +126,7 @@ void TicTacToeAI() {
                 gameOver = true;
             }
         }
-        if (square9 != "9") {
+        if (square9 != " ") {
             if (square3 == square9 && square6 == square9) {
                 gameOver = true;
             }
@@ -135,9 +135,9 @@ void TicTacToeAI() {
             }
         }
 
-        if (square1 != "1" && square2 != "2" && square3 != "3" &&
-            square4 != "4" && square5 != "5" && square6 != "6" &&
-            square7 != "7" && square8 != "8" && square9 != "9" && gameOver)
+        if (square1 != " " && square2 != " " && square3 != " " &&
+            square4 != " " && square5 != " " && square6 != " " &&
+            square7 != " " && square8 != " " && square9 != " " && gameOver)
         {
             gameOver = true;
             winGame = false;
@@ -162,15 +162,15 @@ void TicTacToeAI() {
 
                 if (playAgain == 'y') {
                     gameOver = false;
-                    square1 = '1';
-                    square2 = '2';
-                    square3 = '3';
-                    square4 = '4';
-                    square5 = '5';
-                    square6 = '6';
-                    square7 = '7';
-                    square8 = '8';
-                    square9 = '9';
+                    square1 = ' ';
+                    square2 = ' ';
+                    square3 = ' ';
+                    square4 = ' ';
+                    square5 = ' ';
+                    square6 = ' ';
+                    square7 = ' ';
+                    square8 = ' ';
+                    square9 = ' ';
                     validInput = true;
                 }
                 else {
@@ -198,15 +198,15 @@ void TicTacToeAI() {
 }
 
 void TicTacToeTwoPlr() {
-    char square1('1');
-    char square2('2');
-    char square3('3');
-    char square4('4');
-    char square5('5');
-    char square6('6');
-    char square7('7');
-    char square8('8');
-    char square9('9');
+    string square1(" ");
+    string square2(" ");
+    string square3(" ");
+    string square4(" ");
+    string square5(" ");
+    string square6(" ");
+    string square7(" ");
+    string square8(" ");
+    string square9(" ");
     bool gameOver(true);
     int playerTurn(1);
     do {
@@ -225,38 +225,38 @@ void TicTacToeTwoPlr() {
             playerMark = 'O';
         }
 
-        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9" << endl;
+        cout << "Player" << playerTurn << "'s move. Choose a number between 1-9 to place your mark on that square:" << endl;
         bool validMove;
         do {
-            char nextMove;
+            string nextMove;
             std::cin >> nextMove;
             validMove = true;
 
-            if (nextMove == '1' && square1 == '1') {
+            if (nextMove == "1" && square1 == " ") {
                 square1 = playerMark;
             }
-            else if (nextMove == '2' && square2 == '2') {
+            else if (nextMove == "2" && square2 == " ") {
                 square2 = playerMark;
             }
-            else if (nextMove == '3' && square3 == '3') {
+            else if (nextMove == "3" && square3 == " ") {
                 square3 = playerMark;
             }
-            else if (nextMove == '4' && square4 == '4') {
+            else if (nextMove == "4" && square4 == " ") {
                 square4 = playerMark;
             }
-            else if (nextMove == '5' && square5 == '5') {
+            else if (nextMove == "5" && square5 == " ") {
                 square5 = playerMark;
             }
-            else if (nextMove == '6' && square6 == '6') {
+            else if (nextMove == "6" && square6 == " ") {
                 square6 = playerMark;
             }
-            else if (nextMove == '7' && square7 == '7') {
+            else if (nextMove == "7" && square7 == " ") {
                 square7 = playerMark;
             }
-            else if (nextMove == '8' && square8 == '8') {
+            else if (nextMove == "8" && square8 == " ") {
                 square8 = playerMark;
             }
-            else if (nextMove == '9' && square9 == '9') {
+            else if (nextMove == "9" && square9 == " ") {
                 square9 = playerMark;
             }
             else {
@@ -268,7 +268,7 @@ void TicTacToeTwoPlr() {
         gameOver = false;
         bool winGame = true;
 
-        if (square1 != '1') {
+        if (square1 != " ") {
             if (square2 == square1 && square3 == square1) {
                 gameOver = true;
             }
@@ -276,7 +276,7 @@ void TicTacToeTwoPlr() {
                 gameOver = true;
             }
         }
-        if (square5 != '5') {
+        if (square5 != " ") {
             if (square1 == square5 && square9 == square5) {
                 gameOver = true;
             }
@@ -290,7 +290,7 @@ void TicTacToeTwoPlr() {
                 gameOver = true;
             }
         }
-        if (square9 != '9') {
+        if (square9 != " ") {
             if (square3 == square9 && square6 == square9) {
                 gameOver = true;
             }
@@ -299,9 +299,9 @@ void TicTacToeTwoPlr() {
             }
         }
 
-        if (square1 != '1' && square2 != '2' && square3 != '3' &&
-            square4 != '4' && square5 != '5' && square6 != '6' &&
-            square7 != '7' && square8 != '8' && square9 != '9' && gameOver)
+        if (square1 != " " && square2 != " " && square3 != " " &&
+            square4 != " " && square5 != " " && square6 != " " &&
+            square7 != " " && square8 != " " && square9 != " " && gameOver)
         {
             gameOver = true;
             winGame = false;
@@ -326,15 +326,15 @@ void TicTacToeTwoPlr() {
 
                 if (playAgain == 'y') {
                     gameOver = false;
-                    square1 = '1';
-                    square2 = '2';
-                    square3 = '3';
-                    square4 = '4';
-                    square5 = '5';
-                    square6 = '6';
-                    square7 = '7';
-                    square8 = '8';
-                    square9 = '9';
+                    square1 = ' ';
+                    square2 = ' ';
+                    square3 = ' ';
+                    square4 = ' ';
+                    square5 = ' ';
+                    square6 = ' ';
+                    square7 = ' ';
+                    square8 = ' ';
+                    square9 = ' ';
                     validInput = true;
                 }
                 else {
